@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima en Tiempo Real</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Servicio Meteorológico</h1>
+    <div id="weather-display">
+      <h2 id="city">Ciudad: Buenos Aires</h2>
+      <p id="temperature">Temperatura: --°C</p>
+    </div>
+    <div id="thingspeak-chart"></div>
+    <label for="city-select">Seleccionar Ciudad:</label>
+    <select id="city-select">
+      <option value="Buenos Aires">Buenos Aires</option>
+      <option value="Madrid">Madrid</option>
+      <option value="New York">New York</option>
+      <!-- Puedes agregar más ciudades -->
+    </select>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
