@@ -1,0 +1,14 @@
+name: Update Weather Data
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Cada hora
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ejecutar script de actualización
+      run: |
+        npm install node-fetch
+        node update_data.js
